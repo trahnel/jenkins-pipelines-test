@@ -1,15 +1,14 @@
 #!groovy
 node {
-  stage('Build') {
-    sh 'make1'
+  stage('Dev') {
+    echo 'I am Dev
   }
 
   stage('Test') {
-    sh 'make check'
-    junit 'reports/**/*.xml'
+    echo 'I am Test
   }
 
-  stage('Deploy') {
-    sh 'make publish'
+  stage('Prod') {
+    echo 'I am PROD
   }
 }
