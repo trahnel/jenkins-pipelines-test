@@ -1,7 +1,7 @@
 #!groovy
 node {
   stage('Build') {
-    sh 'make'
+    sh 'make1'
   }
 
   stage('Test') {
